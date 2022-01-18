@@ -1,0 +1,423 @@
+* {
+    /* estilos generales*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root{
+    /*Declarar variables de colores */
+    --cafe-dark: #3f2507;
+    --cafe-medium: #925917;
+    --naranja-light: #f08914;
+    --gris-light: #eaeaea;
+    --blanco: #f4fffd;
+
+}
+
+body {
+    font-size: 20px;
+    font-family:  'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 22px;
+}
+
+/*Header*/
+.contenido-header{
+    width: 100%;
+    height: 100vh; /* 100% del alto del dispositivi movil*/
+    background-image:  url(../img/parallax1.jpg);
+    background-position: center;
+    background-size: cover;/* recortar sobrante de imagen */
+    background-attachment: fixed;/*la imagen se queda fija y lo demas sube*/
+}
+
+
+.contenido-header .fondo {
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/fondo.jpg);
+
+}
+
+
+
+.contenido-header .texto {
+    width: calc(100vw - 20px); /* ancho total del dispositivo*/
+    height: 100vh; /*alto total del dispositivo*/
+    font-size: 60px;/* tamaño del texto*/
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;/* tipo de letra*/
+    font-style: italic;
+    display: flex;/*centrar*/
+    align-items: center;
+    justify-content: center;
+    color: #f38911;
+    mix-blend-mode: multiply;/*el color del texto lo multiplica y le da una trasparencia muy lijera*/
+
+}
+
+/*contacto*/
+.contenido-header-contacto{
+    width: 100%;
+    height: 70vh; /* 100% del alto del dispositivi movil*/
+    background-image: url(../img/parallax1.jpg);
+    background-position: center;
+    background-size: cover;/* recortar sobrante de imagen */
+    background-attachment: fixed;/*la imagen se queda fija y lo demas sube*/
+}
+
+
+.contenido-header-contacto .fondo {
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/contacto.jpg);
+
+}
+
+
+
+.contenido-header-contacto .texto {
+    width: 100vw; /* ancho total del dispositivo*/
+    height: 50vh; /*alto total del dispositivo*/
+    font-size: 60px;/* tamaño del texto*/
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;/* tipo de letra*/
+    font-style: italic;
+    display: flex;/*centrar*/
+    align-items: center;
+    justify-content: center;
+    color: #f38911;
+    mix-blend-mode: multiply;/*el color del texto lo multiplica y le da una trasparencia muy lijera*/
+
+}
+
+/*nosotros*/
+.contenido-header-nosotros {
+    width: 100%;
+    height: 70vh; /* 100% del alto del dispositivi movil*/
+    background-image: url(../img/parallax1.jpg);
+    background-position: center;
+    background-size: cover;/* recortar sobrante de imagen */
+    background-attachment: fixed;/*la imagen se queda fija y lo demas sube*/
+}
+
+
+.contenido-header-nosotros .fondo {
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/seguro.jpg);
+
+}
+
+
+
+.contenido-header-nosotros .texto {
+    width: 100vw; /* ancho total del dispositivo*/
+    height: 100vh; /*alto total del dispositivo*/
+    font-size: 50px;/* tamaño del texto*/
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;/* tipo de letra*/
+    font-style: italic;
+    display: flex;/*centrar*/
+    align-items: center;
+    justify-content: center;
+    color: #f38911;
+    mix-blend-mode: multiply;/*el color del texto lo multiplica y le da una trasparencia muy lijera*/
+
+}
+
+/*servicios*/
+.contenido-header-servicios {
+    width: 100%;
+    height: 70vh; /* 100% del alto del dispositivi movil*/
+    background-image: url(../img/parallax1.jpg);
+    background-position: center;
+    background-size: cover;/* recortar sobrante de imagen */
+    background-attachment: fixed;/*la imagen se queda fija y lo demas sube*/
+}
+
+
+.contenido-header-servicios .fondo {
+    width: 0%;
+    height: 100%;
+    max-width: 100%;
+    background-image: url(../img/diseños/plano1.jpg);
+
+}
+
+
+
+.contenido-header-servicios .texto {
+    width: 100vw; /* ancho total del dispositivo*/
+    height: 100vh; /*alto total del dispositivo*/
+    display: inline-block;
+    font-size: 50px;/* tamaño del texto*/
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;/* tipo de letra*/
+    font-style: italic;
+    display: flex;/*centrar*/
+    align-items: center;
+    justify-content: center;
+    color: #f38911;
+    mix-blend-mode: multiply;/*el color del texto lo multiplica y le da una trasparencia muy lijera*/
+
+}
+
+
+
+/*Menu de navegacion*/
+.menu {
+    background-color: var(--cafe-dark);/*color del menu*/
+    width: 100%;
+    position: sticky;/*se quedara pegado en la parte de arriba al deslizar*/
+    top: 0;
+    padding: 5px;/*padding de 5px a todos los lados*/
+    z-index: 999;
+    text-align: center;/*centrar elemento*/
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/* tipo de funete*/
+    font-style: italic;
+    margin-bottom: 60px;/* margen en la parte de abajdo de 60px*/
+}
+
+
+.menu a{
+    display: inline-block; /*le damos estilo de bloque*/
+    padding: 10px 30px; /*10px de arriba abajo y 30 px a los lados*/
+    font-size: 26px;
+    background-color: var(--cafe-dark);/*colocar color*/
+    margin: 0 10px;/*margen de 0px artiba-abajo y 10px a los lados*/
+    transition: .5s ease all;
+    color: var(--gris-light);/*color de texto*/
+    text-decoration: none;
+
+}
+
+.menu a:hover{
+    transform: translateY(18px);/*desplazar el boton hacia abajo*/
+    background-color: var(--cafe-medium);/*cambiar el color cuanto se desplace*/
+
+}
+
+.nosotros {
+    margin-bottom: 60px;/*margen en la parte de abajo*/
+
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: var(--cafe-dark);
+    font-family: sans-serif;
+    font-weight: 700;
+    z-index: 2;/*asegurarnos que el subtitulo quede arriba del borde*/
+    text-transform: uppercase;/*transformar a mayusculas*/
+    margin-bottom: 20px;
+
+}
+
+.subtitulo span {
+    background-color: var(--gris-light);/*dar color al span*/
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;/*para que el z-index se pueda aplicar*/
+}
+
+.subtitulo::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--cafe-dark);
+    position: relative;
+    top: -29px;
+    z-index: 1;/*para aplicar la linea deja del span */
+}
+
+ .nosotros .titulo {
+     width: 70%;
+     font-size: 44px;
+     text-transform: uppercase;
+     display: inline-block;
+     margin-bottom: 50px;
+
+ }
+
+ .nosotros .enlace {
+     display: inline-block;
+     margin-top: 40px;
+     color: var(--naranja-light);
+     font-weight: 700;
+     border-bottom: 1px solid transparent;
+     transition: .3s ease all;
+
+
+ }
+
+ .nosotros .enlace:hover {
+     text-decoration: none;
+     letter-spacing: 3px;
+     border-bottom: 1px solid var(--cafe-medium);
+
+
+ }
+
+ /*seccion productos*/
+ .productos {
+     background: var(--gris-light);
+     padding: 20px;
+     margin-bottom: 60px;
+ }
+
+ .productos .titulo {
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+
+}
+
+.productos .producto {
+	position: relative;/*colocar el overlay a uncostado para que despues haga el efecto*/
+	width: 100%;/*abarcar el 100% del espacio disponible*/
+}
+
+.productos .overlay {/*colocar un color de fondo a las imagenes*/
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--cafe-medium);
+	overflow: hidden;/*ocultar el texto que queda fuera*/
+	transition: .5s ease;/*colocamos una transaccion*/
+}
+
+.productos .producto:hover .overlay{/*caracteristicas que queremos que tengan los overlay cuando el mouse se posiciona sobre la imagen*/
+	width: 100%;
+	opacity: .8;
+}
+
+.productos .producto .overlay-texto {
+    top: 50%;/*posicionarlo*/
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;/*el texto lo coloque en una sola linea*/
+    color: var(--blanco);
+    font-size: 18px;
+    transform: translate(-50%, -50%);/*mover el texto*/
+    overflow: hidden;/*restante lo oculte*/
+    border-top: 1px solid #f4fffd;
+    border-bottom: 1px solid #f4fffd;
+
+}
+
+.productos .btn-productos {
+    background: var(--cafe-medium);
+    color: #f4fffd;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+}
+
+.productos .btn-productos:hover {
+    background-color: transparent;
+    border: 2px solid var(--cafe-medium);
+    color: var(--cafe-medium);
+}
+
+/* separador con imagen fija*/
+.separador {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/principal2.jpg);
+    background-position: center;/*centrar la imagen*/
+    background-size: cover;/*la imagen se haga un poco mas pequeña, para que abarque el 100% de nuestra ventana*/
+    background-attachment: fixed;
+    margin-bottom: 60px;
+
+}
+
+.separador p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: serif;
+    padding: 10px;
+
+}
+
+.acerca-de {
+    margin-bottom: 60px;
+}
+
+
+/*Galeria*/
+
+.galeria {
+	margin-bottom: 60px;
+}
+
+.galeria img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+
+.contacto {
+    margin-bottom: 60px;
+}
+
+.redes-sociales {
+    padding: 10px;
+    background-color: var(--gris-light);
+
+}
+
+.redes-sociales img{
+    padding: 5px;
+    border-radius: 100%;
+    width: 50px;
+    transition: .3s ease all;
+
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.2);/*indicamos que lo haga 1.2veces mas grande que su tamaño original*/
+}
+
+@media screen and (max-width: 992px) {
+    p{
+        font-size: 18px;/*cambiar el tamaño de todos los parrafos, a mas pequeños*/
+    }
+
+    .contenido-header .texto{
+        font-size: 30px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .nosotros .titulo,
+    .productos .titulo {
+        font-size: 30px;
+    }
+    
+}
+
